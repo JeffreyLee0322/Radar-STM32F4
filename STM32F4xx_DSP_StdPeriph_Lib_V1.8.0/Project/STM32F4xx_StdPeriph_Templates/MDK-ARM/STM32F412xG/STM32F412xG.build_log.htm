@@ -1,0 +1,1328 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jeffrey US, MS, LIC=W96Z9-4BIDX-15XTV-PZW6H-VHYEL-VQ8CQ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\MDK-ARM\Project.uvprojx
+Project File Date:  04/13/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'STM32F412xG'
+compiling system_stm32f4xx.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../system_stm32f4xx.c: 8 warnings, 5 errors
+compiling stm32f4xx_it.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../stm32f4xx_it.c: 8 warnings, 5 errors
+compiling main.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../main.c: 8 warnings, 5 errors
+compiling stm32f4xx_dma2d.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma2d.c: 8 warnings, 5 errors
+compiling stm32f4xx_flash.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c: 8 warnings, 5 errors
+compiling stm32f4xx_pwr.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c(291): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(uint32_t, FunctionalState)"  (declared at line 197 of "../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h")
+  void PWR_WakeUpPinCmd(FunctionalState NewState)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c(312): error:  #247: function "PWR_WakeUpPinCmd"  has already been defined
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c: 8 warnings, 7 errors
+compiling stm32f4xx_fmpi2c.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmpi2c.c: 8 warnings, 5 errors
+compiling stm32f4xx_wwdg.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c: 8 warnings, 5 errors
+compiling stm32f4xx_spi.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c: 8 warnings, 5 errors
+compiling stm32f4xx_hash.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash.c: 8 warnings, 5 errors
+compiling stm32f4xx_ltdc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_ltdc.c: 8 warnings, 5 errors
+compiling stm32f4xx_dfsdm.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dfsdm.c: 8 warnings, 5 errors
+compiling stm32f4xx_dbgmcu.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c: 8 warnings, 5 errors
+compiling stm32f4xx_sdio.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c: 8 warnings, 5 errors
+compiling stm32f4xx_tim.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c: 8 warnings, 5 errors
+compiling stm32f4xx_iwdg.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c: 8 warnings, 5 errors
+compiling stm32f4xx_flash_ramfunc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash_ramfunc.c: 8 warnings, 5 errors
+compiling stm32f4xx_cryp.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp.c: 8 warnings, 5 errors
+compiling stm32f4xx_rtc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c: 8 warnings, 5 errors
+compiling stm32f4xx_cryp_tdes.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_tdes.c: 8 warnings, 5 errors
+compiling stm32f4xx_cryp_aes.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_aes.c: 8 warnings, 5 errors
+compiling stm32f4xx_cec.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cec.c: 8 warnings, 5 errors
+compiling stm32f4xx_adc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c: 8 warnings, 5 errors
+compiling stm32f4xx_i2c.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c: 8 warnings, 5 errors
+compiling stm32f4xx_cryp_des.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_cryp_des.c: 8 warnings, 5 errors
+compiling stm32f4xx_spdifrx.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spdifrx.c: 8 warnings, 5 errors
+compiling stm32f4xx_sai.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sai.c: 8 warnings, 5 errors
+compiling stm32f4xx_crc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c: 8 warnings, 5 errors
+compiling stm32f4xx_usart.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c: 8 warnings, 5 errors
+compiling stm32f4xx_rng.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c: 8 warnings, 5 errors
+compiling misc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/misc.c: 8 warnings, 5 errors
+compiling stm32f4xx_fsmc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fsmc.c: 8 warnings, 5 errors
+compiling stm32f4xx_dsi.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dsi.c: 8 warnings, 5 errors
+compiling stm32f4xx_exti.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c: 8 warnings, 5 errors
+compiling stm32f4xx_dac.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c: 8 warnings, 5 errors
+compiling stm32f4xx_can.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c: 8 warnings, 5 errors
+compiling stm32f4xx_lptim.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_lptim.c: 8 warnings, 5 errors
+compiling stm32f4xx_qspi.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_qspi.c: 8 warnings, 5 errors
+compiling stm32f4xx_dcmi.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c: 8 warnings, 5 errors
+compiling stm32f4xx_hash_md5.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_md5.c: 8 warnings, 5 errors
+compiling stm32f4xx_rcc.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(488): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902 of "../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h")
+  void RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ, uint32_t PLLR)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(539): error:  #247: function "RCC_PLLConfig"  has already been defined
+  void RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(631): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 915 of "../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h")
+  void RCC_PLLI2SConfig(uint32_t PLLI2SN, uint32_t PLLI2SR, uint32_t PLLI2SM)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(713): error:  #247: function "RCC_PLLI2SConfig"  has already been defined
+  void RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(1545): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t)"  (declared at line 953 of "../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h")
+  void RCC_I2SCLKConfig(uint32_t RCC_I2SAPBx, uint32_t RCC_I2SCLKSource)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c(1707): error:  #247: function "RCC_I2SCLKConfig"  has already been defined
+  void RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c: 8 warnings, 11 errors
+compiling stm32f4xx_dma.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c: 8 warnings, 5 errors
+compiling stm32f4xx_gpio.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c: 8 warnings, 5 errors
+compiling stm32f4xx_syscfg.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c: 8 warnings, 5 errors
+compiling stm32f4xx_hash_sha1.c...
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(672): error:  #67: expected a "}"
+    CAN1_TX_IRQn                = 19,     /*!< CAN1 TX Interrupt                                                 */
+../../../Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h(811): warning:  #12-D: parsing restarts here after previous syntax error
+  } IRQn_Type;
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_adc.h(333): warning:  #47-D: incompatible redefinition of macro "ADC_Channel_TempSensor"  (declared at line 329)
+  #define ADC_Channel_TempSensor                      ((uint8_t)ADC_Channel_18)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_flash.h(185): warning:  #47-D: incompatible redefinition of macro "IS_FLASH_ADDRESS"  (declared at line 175)
+  #define IS_FLASH_ADDRESS(ADDRESS) ((((ADDRESS) >= 0x08000000) && ((ADDRESS) <= 0x0807FFFF)) ||\
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_gpio.h(516): warning:  #47-D: incompatible redefinition of macro "IS_GPIO_AF"  (declared at line 483)
+  #define IS_GPIO_AF(AF)   (((AF) < 16) && ((AF) != 11) && ((AF) != 14))
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_pwr.h(200): error:  #147-D: declaration is incompatible with "void PWR_WakeUpPinCmd(FunctionalState)"  (declared at line 197)
+  void PWR_WakeUpPinCmd(uint32_t PWR_WakeUpPinx, FunctionalState NewState);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(164): warning:  #47-D: incompatible redefinition of macro "RCC_SYSCLKSource_PLLCLK"  (declared at line 158)
+  #define RCC_SYSCLKSource_PLLCLK          ((uint32_t)0x00000002)
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(165): warning:  #47-D: incompatible redefinition of macro "IS_RCC_SYSCLK_SOURCE"  (declared at line 153)
+  #define IS_RCC_SYSCLK_SOURCE(SOURCE) (((SOURCE) == RCC_SYSCLKSource_HSI) || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(436): warning:  #47-D: incompatible redefinition of macro "IS_RCC_I2SCLK_SOURCE"  (declared at line 357)
+  #define IS_RCC_I2SCLK_SOURCE(SOURCE) (((SOURCE) == RCC_I2S2CLKSource_PLLI2S) || ((SOURCE) == RCC_I2S2CLKSource_Ext))                                
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(906): error:  #147-D: declaration is incompatible with "void RCC_PLLConfig(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t)"  (declared at line 902)
+  void        RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(921): error:  #147-D: declaration is incompatible with "void RCC_PLLI2SConfig(uint32_t, uint32_t, uint32_t)"  (declared at line 915)
+  void        RCC_PLLI2SConfig(uint32_t PLLI2SM, uint32_t PLLI2SN, uint32_t PLLI2SP, uint32_t PLLI2SQ, uint32_t PLLI2SR);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rcc.h(964): error:  #147-D: declaration is incompatible with "void RCC_I2SCLKConfig(uint32_t, uint32_t)"  (declared at line 953)
+  void        RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource);
+../../../Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_syscfg.h(261): warning:  #47-D: incompatible redefinition of macro "IS_SYSCFG_MEMORY_REMAP_CONFING"  (declared at line 254)
+  #define IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP) (((REMAP) == SYSCFG_MemoryRemap_Flash)       || \
+../../../Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_hash_sha1.c: 8 warnings, 5 errors
+"STM32F412xG\STM32F412xG.axf" - 233 Error(s), 360 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F412xG
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:21
+</pre>
+</body>
+</html>

@@ -1,0 +1,340 @@
+###############################################################################
+#
+# IAR ELF Linker V8.20.2.14835/W32 for ARM                06/May/2018  15:37:14
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Exe\Project.out
+#    Map file     =  
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\List\Project.map
+#    Command line =  
+#        -f C:\Users\ADMINI~1\AppData\Local\Temp\EW2A9A.tmp
+#        (E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\cms_rf.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\cms_spi.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\cms_uart.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\main.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\misc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\startup_stm32f40_41xxx.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_adc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_can.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_crc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_cryp.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_cryp_aes.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_cryp_des.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_cryp_tdes.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dac.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dbgmcu.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dcmi.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dfsdm.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dma.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_dma2d.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_exti.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_flash.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_fmpi2c.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_fsmc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_gpio.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_hash.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_hash_md5.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_hash_sha1.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_i2c.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_it.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_iwdg.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_lptim.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_ltdc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_pwr.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_rcc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_rng.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_rtc.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_sai.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_sdio.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_spdifrx.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_spi.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_syscfg.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_tim.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_usart.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\stm32f4xx_wwdg.o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj\system_stm32f4xx.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Exe\Project.out
+#        --map
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\List\Project.map
+#        --config
+#        E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\stm32f4xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x081fffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x2002ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A0":                                     0x188
+  .intvec            ro code  0x08000000  0x188  startup_stm32f40_41xxx.o [1]
+                            - 0x08000188  0x188
+
+"P1":                                     0x3f9
+  .text              ro code  0x08000188   0xb0  system_stm32f4xx.o [1]
+  .text              ro code  0x08000238   0x8c  stm32f4xx_rcc.o [1]
+  .text              ro code  0x080002c4   0x58  main.o [1]
+  .text              ro code  0x0800031c   0x38  packbits_init_single.o [5]
+  .text              ro code  0x08000354   0x28  data_init.o [5]
+  .text              ro code  0x0800037c   0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x080003a0   0x10  - Linker created -
+  .text              ro code  0x080003b0   0x1e  cmain.o [5]
+  .text              ro code  0x080003ce    0x4  low_level_init.o [3]
+  .text              ro code  0x080003d2    0x4  exit.o [3]
+  .text              ro code  0x080003d8    0xa  cexit.o [5]
+  .text              ro code  0x080003e4   0x14  exit.o [6]
+  .text              ro code  0x080003f8   0x14  stm32f4xx_it.o [1]
+  .text              ro code  0x0800040c   0x10  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800041c    0xc  cstartup_M.o [5]
+  .text              ro code  0x08000428    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800042c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000430    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000434    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000438    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800043c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000440    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000444    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000448    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800044c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000450    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000454    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000458    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800045c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000460    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000464    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000468    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800046c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000470    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000474    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000478    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800047c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000480    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000484    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000488    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800048c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000490    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000494    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000498    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800049c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004a0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004a4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004a8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004ac    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004b0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004b4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004b8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004bc    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004c0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004c4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004c8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004cc    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004d0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004d4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004d8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004dc    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004e0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004e4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004e8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004ec    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004f0    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004f4    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004f8    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x080004fc    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000500    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000504    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000508    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800050c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000510    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000514    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000518    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800051c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000520    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000524    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000528    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800052c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000530    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000534    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000538    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800053c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000540    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000544    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000548    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800054c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000550    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000554    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000558    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800055c    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000560    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000564    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x08000568    0x4  startup_stm32f40_41xxx.o [1]
+  .text              ro code  0x0800056c    0x4  startup_stm32f40_41xxx.o [1]
+  .rodata            const    0x08000570    0x0  packbits_init_single.o [5]
+  Initializer bytes  const    0x08000570   0x11  <for P2-1>
+                            - 0x08000581  0x3f9
+
+"P2", part 1 of 2:                         0x24
+  P2-1                        0x20000000   0x24  <Init block>
+    .data            inited   0x20000000   0x10  stm32f4xx_rcc.o [1]
+    .bss             inited   0x20000010   0x14  main.o [1]
+                            - 0x20000024   0x24
+
+"P2", part 2 of 2:                        0x400
+  CSTACK                      0x20000028  0x400  <Block>
+    CSTACK           uninit   0x20000028  0x400  <Block tail>
+                            - 0x20000428  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x11 (47% of destination):
+          0x08000570  0x11
+    1 destination range, total size 0x24:
+          0x20000000  0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj: [1]
+    main.o                         88       10       20
+    startup_stm32f40_41xxx.o      736
+    stm32f4xx_it.o                 20
+    stm32f4xx_rcc.o               140        7       16
+    system_stm32f4xx.o            176
+    ---------------------------------------------------
+    Total:                      1 160       17       36
+
+command line: [2]
+    ---------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    exit.o                          4
+    low_level_init.o                4
+    ---------------------------------------------------
+    Total:                          8
+
+m7M_tls.a: [4]
+    fpinit_M.o                     34
+    ---------------------------------------------------
+    Total:                         34
+
+rt7M_tl.a: [5]
+    cexit.o                        10
+    cmain.o                        30
+    cstartup_M.o                   12
+    data_init.o                    40
+    packbits_init_single.o         56
+    ---------------------------------------------------
+    Total:                        148
+
+shb_l.a: [6]
+    exit.o                         20
+    ---------------------------------------------------
+    Total:                         20
+
+    Gaps                            4        2
+    Linker created                          16    1 024
+-------------------------------------------------------
+    Grand Total:                1 374       35    1 060
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+.iar.init_table$$Base   0x080003a0         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080003b0         --   Gb  - Linker created -
+?main                   0x080003b1        Code  Gb  cmain.o [5]
+APBAHBPrescTable        0x20000000  0x10  Data  Lc  stm32f4xx_rcc.o [1]
+BusFault_Handler        0x080003ff   0x2  Code  Gb  stm32f4xx_it.o [1]
+CSTACK$$Base            0x20000028         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000428         --   Gb  - Linker created -
+DebugMon_Handler        0x08000405   0x2  Code  Gb  stm32f4xx_it.o [1]
+HardFault_Handler       0x080003fb   0x2  Code  Gb  stm32f4xx_it.o [1]
+MemManage_Handler       0x080003fd   0x2  Code  Gb  stm32f4xx_it.o [1]
+NMI_Handler             0x080003f9   0x2  Code  Gb  stm32f4xx_it.o [1]
+PendSV_Handler          0x08000407   0x2  Code  Gb  stm32f4xx_it.o [1]
+RCC_Clocks              0x20000010  0x10  Data  Gb  main.o [1]
+RCC_GetClocksFreq       0x08000239  0x7a  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base     0x080003a0         --   Gb  - Linker created -
+Region$$Table$$Limit    0x080003b0         --   Gb  - Linker created -
+SVC_Handler             0x08000403   0x2  Code  Gb  stm32f4xx_it.o [1]
+SysTick_Handler         0x08000409   0x4  Code  Gb  stm32f4xx_it.o [1]
+SystemInit              0x08000189  0x90  Code  Gb  system_stm32f4xx.o [1]
+TimingDelay_Decrement   0x08000301   0xe  Code  Gb  main.o [1]
+UsageFault_Handler      0x08000401   0x2  Code  Gb  stm32f4xx_it.o [1]
+__cmain                 0x080003b1        Code  Gb  cmain.o [5]
+__exit                  0x080003e5  0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x08000355  0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x0800037d        Code  Gb  fpinit_M.o [4]
+__iar_packbits_init_single3
+                        0x0800031d  0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x0800041d        Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001        Data  Gb  command line/config [2]
+__low_level_init        0x080003cf   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000        Data  Gb  startup_stm32f40_41xxx.o [1]
+_call_main              0x080003bd        Code  Gb  cmain.o [5]
+_exit                   0x080003d9        Code  Gb  cexit.o [5]
+_main                   0x080003cb        Code  Gb  cmain.o [5]
+exit                    0x080003d3   0x4  Code  Gb  exit.o [3]
+main                    0x080002c5  0x3c  Code  Gb  main.o [1]
+uwTimingDelay           0x20000020   0x4  Data  Lc  main.o [1]
+
+
+[1] = E:\CMS_Project\Radar\Project\en.stm32f4_dsp_stdperiph_lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\EWARM\STM32F40_41xxx\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  1 374 bytes of readonly  code memory
+     35 bytes of readonly  data memory
+  1 060 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
